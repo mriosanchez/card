@@ -1,0 +1,21 @@
+---
+// src/pages/index.astro
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+---
+
+<BaseLayout
+  title="Personal Card Portfolio Astro"
+  description="Meta description. Here goes your page description. Provide a clear and concise summary of the content."
+>
+  <Card
+    name="Mario Sánchez"
+    position="Mechanical Engineer"
+    aboutMe={`Hi there! I'm Mario, passionate about engineering and continuous learning. My journey has taken me from academic excellence to all kinds of jobs. Waiting tables, tutoring, volunteering, and lifeguarding helped me develop adaptability, communication, and stress-management skills.\n\nI love tackling challenges head-on and building solutions that are both functional and elegant. Let's create something awesome together!`}
+    linkedin="https://www.linkedin.com/in/mriosanchezrodriguez/"
+    github="https://github.com/mriosanchez"
+    cvLink="/card/files/resume-cv.pdf"
+    profileImage="/card/images/profile2.jpg"
+  />
+</BaseLayout>
